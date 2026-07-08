@@ -100,3 +100,10 @@ vim.keymap.set("n", "<leader>gq", function()
     vim.cmd("DiffviewClose")
 end, { desc = "Close diff view" })
 
+-- copilot chat
+vim.keymap.set("n", "<leader>cc", "<cmd>CopilotChatToggle<CR>")
+vim.keymap.set("v", "<leader>ce", "<cmd>CopilotChatExplain<CR>")
+vim.keymap.set("v", "<leader>cr", "<cmd>CopilotChatReview<CR>")
+
+vim.keymap.set("n", "<leader>ò", "<cmd>ToggleTerm<CR>", { noremap = true, silent = true })
+vim.keymap.set("t", "<leader>ò", "<cmd>ToggleTerm<CR>", { noremap = true, silent = true })

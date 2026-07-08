@@ -11,7 +11,25 @@ vim.pack.add {
     { src = "https://github.com/folke/lazy.nvim" },
     { src = "https://github.com/sindrets/diffview.nvim" },
     { src = "https://github.com/kdheepak/lazygit.nvim" },
+
+    { src = "https://github.com/neovim/nvim-lspconfig" },
+    { src = "https://github.com/mason-org/mason.nvim" },
+    { src = "https://github.com/mason-org/mason-lspconfig.nvim" },
+
+    { src = "https://github.com/Saghen/blink.cmp" },
+
+    { src = "https://github.com/akinsho/toggleterm.nvim" },
+
+    { src = "https://github.com/CopilotC-Nvim/CopilotChat.nvim" },
 }
+
+require("toggleterm").setup({
+    size = 20,
+    direction = "float",
+    float_opts = {
+        border = "rounded",
+    },
+})
 
 require("diffview").setup({
     enhanced_diff_hl = true,
