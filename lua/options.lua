@@ -11,6 +11,8 @@ vim.opt.expandtab = true
 vim.opt.smartindent = false
 vim.opt.wrap = false
 
+vim.opt.scrolloff = 8
+
 -- backup and undo
 vim.opt.swapfile = false
 vim.opt.backup = false
