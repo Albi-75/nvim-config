@@ -76,10 +76,6 @@ vim.keymap.set("n", "<C-l>", function() harpoon:list():select(4) end)
 
 -- git signs
 local gs = require("gitsigns")
-vim.keymap.set("n", "<leader>gp", gs.preview_hunk)
-vim.keymap.set("n", "<leader>gr", gs.reset_hunk)
-vim.keymap.set("n", "<leader>gs", gs.stage_hunk)
-vim.keymap.set("n", "<leader>gu", gs.undo_stage_hunk)
 
 vim.keymap.set("n", "<leader>gb", function()
     require("telescope.builtin").git_branches()
@@ -87,6 +83,10 @@ end)
 vim.keymap.set("n", "<leader>gf", function()
     require("telescope.builtin").git_files()
 end)
+
+vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", {
+    desc = "Open LazyGit",
+})
 
 -- diffvew
 -- Open file history 
@@ -102,15 +102,3 @@ vim.keymap.set("n", "<leader>gq", function()
     vim.cmd("DiffviewClose")
 end, { desc = "Close diff view" })
 
--- git graph
-vim.keymap.set("n", "<leader>gg", function()
-    require("gitgraph").draw({}, {
-        all = true,
-        hooks = {
-            on_select_commit = function(commit)
-                -- open diffview for selected commit
-                vim.cmd("DiffviewOpen " .. commit.hash .. "^!")
-            end,
-        },
-    })
-end, { desc = "Git graph" })

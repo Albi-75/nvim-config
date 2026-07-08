@@ -10,18 +10,8 @@ vim.pack.add {
     { src = "https://github.com/lewis6991/gitsigns.nvim" },
     { src = "https://github.com/folke/lazy.nvim" }, -- optional dependency safety (harmless if unused)
     { src = "https://github.com/sindrets/diffview.nvim" },
-    { src = "https://github.com/isakbm/gitgraph.nvim" },
+    { src = "https://github.com/kdheepak/lazygit.nvim" },
 }
-
-require("gitgraph").setup({
-    symbols = {
-        merge_commit = "M",
-        commit = "*",
-    },
-    format = {
-        timestamp = "%H:%M:%S %d-%m-%Y",
-    },
-})
 
 require("diffview").setup({
     enhanced_diff_hl = true,
