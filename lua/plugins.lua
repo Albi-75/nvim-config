@@ -1,4 +1,4 @@
-vim.pack.add { 
+vim.pack.add {
     { src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = 'https://github.com/stevearc/oil.nvim' },
@@ -8,7 +8,7 @@ vim.pack.add {
     { src = 'https://github.com/nvim-lualine/lualine.nvim' },
     { src = "https://github.com/ThePrimeagen/harpoon", name = "harpoon" },
     { src = "https://github.com/lewis6991/gitsigns.nvim" },
-    { src = "https://github.com/folke/lazy.nvim" }, -- optional dependency safety (harmless if unused)
+    { src = "https://github.com/folke/lazy.nvim" },
     { src = "https://github.com/sindrets/diffview.nvim" },
     { src = "https://github.com/kdheepak/lazygit.nvim" },
 }
@@ -54,7 +54,7 @@ require("oil").setup({
     keymaps = {
         ["<C-h>"] = false,
         ["<C-l>"] = false,
-        ["<C-c>"] = false, 
+        ["<C-c>"] = false,
         ["<C-r>"] = "actions.refresh",
         ["<M-h>"] = "actions.select_split",
         ["q"] = "actions.close",

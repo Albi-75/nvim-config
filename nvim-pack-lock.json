@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "LuaSnip": {
+      "rev": "0abc8f390b278c3b4aabc4c004ac8a088b65cf24",
+      "src": "https://github.com/L3MON4D3/LuaSnip"
+    },
     "blink.cmp": {
       "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
       "src": "https://github.com/saghen/blink.cmp"
@@ -11,6 +15,10 @@
     "codeme.nvim": {
       "rev": "54810c83d183c6e69f9ad910a4a410ed80958d66",
       "src": "https://gitlab.com/tduyng/codeme.nvim"
+    },
+    "conform.nvim": {
+      "rev": "619363c30309d29ffa631e67c8183f2a72caa373",
+      "src": "https://github.com/stevearc/conform.nvim"
     },
     "diffview.nvim": {
       "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
@@ -56,6 +64,10 @@
       "rev": "221ce6b2d999187044529f49da6554a92f740a96",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
+    "mason-lspconfig.nvim": {
+      "rev": "47059d71b42d74b0a1e9f61c1d99d301039c3b5b",
+      "src": "https://github.com/mason-org/mason-lspconfig.nvim"
+    },
     "mason.nvim": {
       "rev": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d",
       "src": "https://github.com/mason-org/mason.nvim"
@@ -75,6 +87,10 @@
     "nvim-dap-view": {
       "rev": "ba5c838e731003abefb8bc1c403c59aa5b3aa194",
       "src": "https://github.com/igorlfs/nvim-dap-view"
+    },
+    "nvim-lint": {
+      "rev": "a219b2c9e5b4765e5c845aba119dad55806fcaf1",
+      "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": {
       "rev": "d224a1920728ba129880efc700d4a0180ac4ecbb",
