@@ -105,5 +105,17 @@ vim.keymap.set("n", "<leader>cc", "<cmd>CopilotChatToggle<CR>")
 vim.keymap.set("v", "<leader>ce", "<cmd>CopilotChatExplain<CR>")
 vim.keymap.set("v", "<leader>cr", "<cmd>CopilotChatReview<CR>")
 
-vim.keymap.set("n", "<leader>ò", "<cmd>ToggleTerm<CR>", { noremap = true, silent = true })
-vim.keymap.set("t", "<leader>ò", "<cmd>ToggleTerm<CR>", { noremap = true, silent = true })
+local Terminal = require("toggleterm.terminal").Terminal
+
+local bottom_term = Terminal:new({
+    direction = "horizontal",
+    hidden = true,
+})
+vim.keymap.set({ "n", "t" }, "<leader>ò", function()
+    bottom_term:toggle()
+end, { desc = "Toggle terminal" })
+vim.keymap.set("t", "<Esc><Esc>", [[<C-\><C-n>]], {
+    desc = "Exit terminal mode",
+})
+
+

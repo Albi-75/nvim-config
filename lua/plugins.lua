@@ -24,12 +24,18 @@ vim.pack.add {
 }
 
 require("toggleterm").setup({
-    size = 20,
-    direction = "float",
-    float_opts = {
-        border = "rounded",
+    direction = "horizontal",
+    size = 15,
+    start_in_insert = true,
+    insert_mappings = true,
+    persist_size = true,
+    persist_mode = true,
+    shade_terminals = false,
+    winbar = {
+        enabled = false,
     },
 })
+
 
 require("diffview").setup({
     enhanced_diff_hl = true,
